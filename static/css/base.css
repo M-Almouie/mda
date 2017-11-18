@@ -1,0 +1,30 @@
+#outter {
+  position: relative;
+}
+#inner {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  width:430px; height:400px; top:300px; right:450px;
+}
+#footer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  width:230px; height:70px; top:970px; right:570px;
+}
+#box {
+  height: 170px;
+  width: 270px;
+  background: #000;
+  font-size: 48px;
+  color: #FFF;
+  text-align: center;
+}
+ul {
+  font-size: 25px;
+}
+p {
+  font-size: 25px;
+}
+#foot {
+  color: #fff;
+}
