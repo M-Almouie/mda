@@ -8,6 +8,11 @@ app = Flask(__name__)
 def begin():
     return render_template('homepage.html')
 
+@app.route('/summ', methods=['GET','POST'])
+def summ():
+    return render_template('sum.html')
+
+
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)
     app.run(debug=True)
