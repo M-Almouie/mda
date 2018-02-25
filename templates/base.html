@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>mdalmouiee</title>
-  <link rel = "stylesheet" type = "text/css" href = "static/css/base.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-</head>
+    <head>
+      <title>mdalmouiee</title>
+      <link rel ="stylesheet" type = "text/css" href = "static/css/base.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/art.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <script>
+        function myFunction() {
+            var x = document.lastModified;
+            document.getElementById("demo").innerHTML = x;
+        }
+        </script>
+    </head>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="homepage">mdalmouiee</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="homepage">Home</a></li>
-      <li class="active"><a href="sum">Summary</a></li>
-      <li class="active"><a href="skills">Skills</a></li>
-      <li class="active"><a href="high">Highlights</a></li>
-      <li class="active"><a href="exp">Experience</a></li>
-      <li class="active"><a href="edu">Education</a></li>
-    </ul>
-  </div>
-</nav>
-  <body background="static/img/lightblue.jpg">
-  <center>
-    <h1>Mohamed Daniel Al Mouiee</h1>
-    <h3><i>Software/Biomedical Engineer</i></h3>
-    <h3><i>DOB: 16/01/1997</i></h3>
-    <h3><i>Email: d.almouiee@gmail.com</i></h3>
-    <h3><i>Github: </i><a href="https://github.com/M-Almouie">M-Almouie</a></h3>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="homepage">mdalmouiee</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="homepage">Home</a></li>
+          <li class="active"><a href="blg">Blogs</a></li>
+          <li class="active"><a href="sum">Summary</a></li>
+          <li class="active"><a href="skills">Skills</a></li>
+          <li class="active"><a href="high">Highlights</a></li>
+          <li class="active"><a href="exp">Experience</a></li>
+          <li class="active"><a href="edu">Education</a></li>
+        </ul>
+      </div>
+    </nav>
+      <body background="static/img/lightblue.jpg">
+      <center>
+        <h1>Mohamed Daniel Al Mouiee</h1>
+        <h3><i>Software/Biomedical Engineer</i></h3>
+        <h3><i>DOB: 16/01/1997</i></h3>
+        <h3><i>Email: d.almouiee@gmail.com</i></h3>
+        <h3><i>Github: </i><a href="https://github.com/M-Almouie">M-Almouie</a></h3>
+        <br>
+        <div id="TDC_1516248473_v1_5a601d9967a91" class = "TDC_badgesMostPopular" height="100" width="30"><a target = "_blank" href = "https://www.tutors4you.com.au/directory/mr-daniel-almouiee-8106.html#most-popular-box">Tutors4You Most Popular 2017 Award</a></div><script async src="https://www.tutors4you.com.au/badges/most-popular/8106/2017/TDC_1516248473_v1_5a601d9967a91/" charset="utf-8"></script></a></li>
+        <br>
+        <br>
+        <img height="300" width="200" src="static/img/profilePic.png">
+      </center>
+      {% block body %}
+      {% endblock %}
+    </body>
     <br>
-    <div id="TDC_1516248473_v1_5a601d9967a91" class = "TDC_badgesMostPopular" height="100" width="30"><a target = "_blank" href = "https://www.tutors4you.com.au/directory/mr-daniel-almouiee-8106.html#most-popular-box">Tutors4You Most Popular 2017 Award</a></div><script async src="https://www.tutors4you.com.au/badges/most-popular/8106/2017/TDC_1516248473_v1_5a601d9967a91/" charset="utf-8"></script></a></li>
     <br>
     <br>
-    <img height="300" width="200" src="static/img/profilePic.png">
-  </center>
-  {% block body %}
-  {% endblock %}
-</body>
-<center>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <p id="foot">Copyright &copy;2017</p>
-    </div>
-  </nav>
-</center>
+    <br>
+    <br>
+    <br>
+    <center>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <p id="foot">Copyright &copy;
+                <script>
+                    var date = document.lastModified;
+                    date = date.replace(/\d+\:.*/, ' ');
+                    document.write(date);
+                </script>
+            </p>
+        </div>
+      </nav>
+    </center>
 </html>
